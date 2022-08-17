@@ -1,4 +1,4 @@
-# dagens-fynd-alerter
+# SweClockers Dagens Fynd Discord Bot
 
 Discord bot which scrapes deals suggested by users on <a href="https://www.sweclockers.com/">sweclockers.com</a>.
 
