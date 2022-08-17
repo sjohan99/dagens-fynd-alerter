@@ -29,6 +29,13 @@ def remove_plus_and_convert_to_int(tag):
     return int(str(tag)[1:])
 
 
+def get_upvotes(tip):
+    try:
+        return remove_plus_and_convert_to_int(tip.find('span', class_='label').text.strip())
+    except AttributeError:
+        return 0
+
+
 def create_suggestions_dict(soup):
     suggestions = dict()
     tips_div = soup.find('div', class_='tips-data')
@@ -36,9 +43,8 @@ def create_suggestions_dict(soup):
 
     for tip in tips_rows:
         product = tip.find('div', class_='col-product-inner-wrapper').text.strip()
-        author = tip.find('div',
-                          class_='cell-col col-user hide-viewport-small display-none display-s-block').text.strip()
-        upvotes = remove_plus_and_convert_to_int(tip.find('span', class_='label').text.strip())
+        author = tip.find('div', class_='cell-col col-user hide-viewport-small display-none display-s-block').text.strip()
+        upvotes = get_upvotes(tip)
         price = tip.find('div', class_='cell-col col-price').text.strip()
         link = tip.find('a', class_='col-wrapper cell-product')['href']
         detected = int(time.time())
@@ -67,10 +73,10 @@ def update_suggestions(path):
     add_new_suggestions(saved_suggestions[SUGGESTIONS])
 
     with open(path, 'w', encoding='utf-8') as f:
-        f.write(json.dumps(saved_suggestions))
+        f.write(json.dumps(saved_suggestions, indent=4))
 
 
-def get_all_new_suggestions(path, update=False):
+def get_all_new_suggestions(path=SUGGESTION_PATH, update=False):
     if update:
         update_suggestions(path)
 
