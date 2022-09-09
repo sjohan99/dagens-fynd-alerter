@@ -33,7 +33,7 @@ class DagensFynd(discord.Client):
 
     async def setup_hook(self) -> None:
         # start the task to run in the background
-        self.run_scraper.start()
+        await self.run_scraper()  #.start()
 
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
