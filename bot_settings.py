@@ -26,6 +26,7 @@ class DagensFyndConfig:
         return self.config[GUILDS].items()
 
     def should_notify_user(self, user_id, guild_id, notify=True):
+        guild_id = str(guild_id)
         if guild_id not in self.config[SUBSCRIBERS]:
             self.config[SUBSCRIBERS][guild_id] = []
         if notify and user_id not in self.config[SUBSCRIBERS][guild_id]:
