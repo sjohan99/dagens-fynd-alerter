@@ -1,16 +1,11 @@
-import asyncio
+import sys
 
 import discord
-import sched, time
-
 from discord.ext import tasks
-
 import suggestion_scraper
 from bot_settings import DagensFyndConfig
 
 PREFIX = "df "
-with open('tokensecret.txt', 'r', encoding='utf-8') as f:
-    token = f.read().strip()
 
 
 def format_mentions(user_ids):
@@ -94,6 +89,17 @@ class DagensFynd(discord.Client):
         await self.wait_until_ready()  # wait until the bot logs in
         print('starting run scraper')
 
+
+if __name__ == '__main__':
+    if sys.argv[1]:
+        token = sys.argv[1]
+    else:
+        try:
+            with open('tokensecret.txt', 'r', encoding='utf-8') as f:
+                token = f.read().strip()
+        except FileNotFoundError as e:
+            print(e)
+            exit()
 
 client = DagensFynd(intents=discord.Intents.default())
 client.run(token)
