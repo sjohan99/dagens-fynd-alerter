@@ -39,6 +39,7 @@ class DagensFynd(discord.Client):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
         print('------')
         if not self.running:
+            self.running = True
             await self.setup_hook()
 
     async def on_message(self, message):
