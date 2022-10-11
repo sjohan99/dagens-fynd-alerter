@@ -31,7 +31,7 @@ class DagensFyndConfig:
             self.config[SUBSCRIBERS][guild_id] = []
         if notify and user_id not in self.config[SUBSCRIBERS][guild_id]:
             self.config[SUBSCRIBERS][guild_id].append(user_id)
-        elif user_id in self.config[SUBSCRIBERS][guild_id]:
+        elif not notify and user_id in self.config[SUBSCRIBERS][guild_id]:
             self.config[SUBSCRIBERS][guild_id].remove(user_id)
 
         with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
