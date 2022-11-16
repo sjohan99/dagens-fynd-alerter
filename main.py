@@ -33,7 +33,7 @@ class DagensFynd(discord.Client):
 
     async def setup_hook(self) -> None:
         # start the task to run in the background
-        await self.run_scraper()  #.start()
+        await self.run_scraper.start()
 
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
@@ -82,11 +82,13 @@ class DagensFynd(discord.Client):
 
     @tasks.loop(seconds=180)
     async def run_scraper(self):
+        print('scraping ...')
         suggestions = suggestion_scraper.get_all_new_suggestions(update=True)
         await self.send_suggestions(suggestions)
 
     @run_scraper.before_loop
     async def before_my_task(self):
+        print('waiting until bot ready ...')
         await self.wait_until_ready()  # wait until the bot logs in
         print('starting run scraper')
 
