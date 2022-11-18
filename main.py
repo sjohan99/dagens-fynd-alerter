@@ -17,9 +17,10 @@ def format_mentions(user_ids):
 
 def format_suggestion(suggestion):
     return (
-        f'**Item**: {suggestion["product"]}\n'
-        f'**Price**: {suggestion["price"]}\n'
-        f'**Link**: {suggestion["link"]}\n'
+        f'Item: **{suggestion["product"]}**\n'
+        f'Price: **{suggestion["price"]}**\n'
+        f'Link: <{suggestion["link"]}>\n'
+        f'Post: <{suggestion["post_link"]}>\n'
     )
 
 
@@ -80,7 +81,7 @@ class DagensFynd(discord.Client):
                 await channel.send(format_mentions(users_to_notify))
         print(f'Found {len(suggestions)} new suggestions')
 
-    @tasks.loop(seconds=180)
+    @tasks.loop(seconds=90)
     async def run_scraper(self):
         print('scraping ...')
         suggestions = suggestion_scraper.get_all_new_suggestions(update=True)
@@ -89,7 +90,7 @@ class DagensFynd(discord.Client):
     @run_scraper.before_loop
     async def before_my_task(self):
         print('waiting until bot ready ...')
-        await self.wait_until_ready()  # wait until the bot logs in
+        #await self.wait_until_ready()  # wait until the bot logs in
         print('starting run scraper')
 
 

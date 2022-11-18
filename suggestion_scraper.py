@@ -46,7 +46,8 @@ def create_suggestions_dict(soup):
         author = tip.find('div', class_='cell-col col-user hide-viewport-small display-none display-s-block').text.strip()
         upvotes = get_upvotes(tip)
         price = tip.find('div', class_='cell-col col-price').text.strip()
-        link = tip.find('a', class_='col-wrapper cell-product')['href']
+        product_link = tip.find('a', class_='col-wrapper cell-product')['href']
+        post_link = f"https://www.sweclockers.com{tip.find('a', class_='col-wrapper cell-user')['href']}"
         detected = int(time.time())
 
         suggestions[f'{author}: {product}'] = {
@@ -54,7 +55,8 @@ def create_suggestions_dict(soup):
             'author': author,
             'upvotes': upvotes,
             'price': price,
-            'link': link,
+            'link': product_link,
+            'post_link': post_link,
             'detected': detected
         }
 
@@ -116,6 +118,11 @@ def remove_old_suggestions(saved_suggestions, time_limit_in_seconds):
     return saved_suggestions
 
 
+def debug():
+    soup = get_soup_parser_for_html(SWEC_DAGENSFYND_URL)
+    scraped_suggestions = create_suggestions_dict(soup)
+
 if __name__ == '__main__':
-    update_suggestions(SUGGESTION_PATH)
-    print(get_all_new_suggestions(SUGGESTION_PATH))
+    # update_suggestions(SUGGESTION_PATH)
+    # print(get_all_new_suggestions(SUGGESTION_PATH))
+    debug()
