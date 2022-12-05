@@ -1,149 +1,320 @@
 {
     "suggestions": {
-        "@Mumu55: BenQ EX2780Q 27\" IPS QHD 144Hz 5ms GtG (Prime)": {
-            "product": "BenQ EX2780Q 27\" IPS QHD 144Hz 5ms GtG (Prime)",
-            "author": "@Mumu55",
+        "@TheZlatan1000: Svive Triton Mini 70 Brown switch (svart)": {
+            "product": "Svive Triton Mini 70 Brown switch (svart)",
+            "author": "@TheZlatan1000",
+            "upvotes": 8,
+            "price": "349  kr",
+            "link": "https://www.komplett.se/product/1156849/gaming/spelutrustning/gamingtangentbord/svive-triton-mini-70-brown-switch-svart",
+            "post_link": "https://www.sweclockers.com/forum/post/19832204",
+            "detected": 1669734815
+        },
+        "@nuco: QNAP TS-464-4G NAS, Svart, Guld": {
+            "product": "QNAP TS-464-4G NAS, Svart, Guld",
+            "author": "@nuco",
             "upvotes": 2,
-            "price": "2 732  kr",
-            "link": "https://www.amazon.se/-/en/dp/B07X8HBHJP",
-            "detected": 1665522252
-        },
-        "@Mumu55: Dell S3422DWG 34\" VA 144Hz WQHD 1-2ms 99% sRGB (Prime)": {
-            "product": "Dell S3422DWG 34\" VA 144Hz WQHD 1-2ms 99% sRGB (Prime)",
-            "author": "@Mumu55",
-            "upvotes": 6,
-            "price": "4 410  kr",
-            "link": "https://www.amazon.se/-/en/dp/B095C2QLK2/",
-            "detected": 1665522252
-        },
-        "@THB: Nothing Phone (1) 8GB RAM 256GB": {
-            "product": "Nothing Phone (1) 8GB RAM 256GB",
-            "author": "@THB",
-            "upvotes": 0,
-            "price": "4 990  kr",
-            "link": "https://www.netonnet.se/art/mobil-smartwatch/mobiltelefoner/nothing-phone-1-8256gb-black/1025260.9042/",
-            "detected": 1665522252
-        },
-        "@N\u00e4bbdjuret: Asus Radeon RX 6800 XT TUF Gaming OC": {
-            "product": "Asus Radeon RX 6800 XT TUF Gaming OC",
-            "author": "@N\u00e4bbdjuret",
-            "upvotes": 9,
-            "price": "7 392  kr",
-            "link": "https://www.amazon.se/dp/B08QVRZH3C",
-            "detected": 1665522252
-        },
-        "@Mumu55: Lenovo Ideapad 5 Pro 14'' 2.2K 16:10 IPS Ryzen 5 5600U 8GB 512GB SSD WiFi6 W10H (Prime)": {
-            "product": "Lenovo Ideapad 5 Pro 14'' 2.2K 16:10 IPS Ryzen 5 5600U 8GB 512GB SSD WiFi6 W10H (Prime)",
-            "author": "@Mumu55",
-            "upvotes": 4,
-            "price": "5 490  kr",
-            "link": "https://www.amazon.se/-/en/dp/B09F3MRHDL/",
-            "detected": 1665522252
-        },
-        "@Ulash: Apple Watch Ultra": {
-            "product": "Apple Watch Ultra",
-            "author": "@Ulash",
-            "upvotes": 12,
-            "price": "8 796  kr",
-            "link": "https://shop.halebop.se/tillbehor/klockor/watch-ultra-4g-titanium-gray-m-l",
-            "detected": 1665522252
-        },
-        "@THB: Microsoft Surface Laptop Studio - i5/16GB/256GB": {
-            "product": "Microsoft Surface Laptop Studio - i5/16GB/256GB",
-            "author": "@THB",
-            "upvotes": 5,
-            "price": "13 787  kr",
-            "link": "https://www.mediamarkt.se/sv/product/_microsoft-surface-laptop-studio-14-1338086.html",
-            "detected": 1665522252
-        },
-        "@Ketric: Playstation 5 + FIFA 23": {
-            "product": "Playstation 5 + FIFA 23",
-            "author": "@Ketric",
-            "upvotes": 3,
-            "price": "7 349  kr",
-            "link": "https://www.amazon.se/-/en/dp/B0BG3HQZTQ/ref=sr_1_5?keywords=PlayStation&qid=1665598601&qu=eyJxc2MiOiI1LjY5IiwicXNhIjoiNS4zNyIsInFzcCI6IjQuMzMifQ%3D%3D&sr=8-5",
-            "detected": 1665609707
-        },
-        "@Funkforce: Sony PlayStation 5 (PS5) 825GB": {
-            "product": "Sony PlayStation 5 (PS5) 825GB",
-            "author": "@Funkforce",
-            "upvotes": 6,
             "price": "-",
-            "link": "https://www.kjell.com/se/produkter/tv-spel-gaming/playstation-5/sony-playstation-5-spelkonsol-p62770",
-            "detected": 1665609707
+            "link": "https://www.amazon.se/QNAP-TS-464-4G-NAS-Svart-Guld/dp/B0BB1KTZ4Y",
+            "post_link": "https://www.sweclockers.com/forum/post/19832148",
+            "detected": 1669734815
         },
-        "@p8dle: NZXT H1 V2 (Vit)": {
-            "product": "NZXT H1 V2 (Vit)",
-            "author": "@p8dle",
-            "upvotes": 4,
-            "price": "2 867  kr",
-            "link": "https://www.amazon.se/dp/B09VMLHVPT/ref=asc_df_B09VMLHVPT1665534300000/?tag=prisjakt05-21&creative=380333&creativeASIN=B09VMLHVPT&linkCode=asn&smid=ANU9KP01APNAG",
-            "detected": 1665609707
+        "@TheZlatan1000: Samsung Galaxy Tab S6 Lite 2022 WiFi surfplatta 4/64GB (gr\u00e5)": {
+            "product": "Samsung Galaxy Tab S6 Lite 2022 WiFi surfplatta 4/64GB (gr\u00e5)",
+            "author": "@TheZlatan1000",
+            "upvotes": 8,
+            "price": "2 490  kr",
+            "link": "https://www.elgiganten.se/product/mobiler-tablets-smartklockor/surfplatta/samsung-galaxy-tab-s6-lite-2022-wifi-surfplatta-464gb-gra/463499",
+            "post_link": "https://www.sweclockers.com/forum/post/19832012",
+            "detected": 1669734815
         },
-        "@Mumu55: Cooler Master GM34-CWQ 34\" VA QLED 144Hz WQHD 98% DCI-P3": {
-            "product": "Cooler Master GM34-CWQ 34\" VA QLED 144Hz WQHD 98% DCI-P3",
-            "author": "@Mumu55",
-            "upvotes": 6,
-            "price": "5 290  kr",
-            "link": "https://www.maxgaming.se/sv/datorskarm/gm34-cwq-argb-34-wqhd-va-144hz-quantum-dot-curved-gamingskarm?",
-            "detected": 1665609707
+        "@Matjon: Arctic P14 PWM PST Vit/Transparent": {
+            "product": "Arctic P14 PWM PST Vit/Transparent",
+            "author": "@Matjon",
+            "upvotes": 8,
+            "price": "60  kr",
+            "link": "https://www.arctic.de/en/P14-PWM-PST/ACFAN00221A/",
+            "post_link": "https://www.sweclockers.com/forum/post/19831876",
+            "detected": 1669734815
         },
-        "@Mumu55: Sharp 55BL2EA 55\" 4K 60Hz Android TV": {
-            "product": "Sharp 55BL2EA 55\" 4K 60Hz Android TV",
-            "author": "@Mumu55",
-            "upvotes": 10,
-            "price": "3 990  kr",
-            "link": "https://www.mediamarkt.se/sv/product/_sharp-55bl2ea-55-uhd-4k-android-tv%E2%84%A2-1351276.html?",
-            "detected": 1668612514
-        },
-        "@Mumu55: Sharp 55BL5EA 55\" 4K 60Hz Android TV": {
-            "product": "Sharp 55BL5EA 55\" 4K 60Hz Android TV",
-            "author": "@Mumu55",
-            "upvotes": 10,
-            "price": "3 990  kr",
-            "link": "https://www.mediamarkt.se/sv/product/_sharp-55bl5ea-55-uhd-4k-android-tv%E2%84%A2-1349207.html?",
-            "detected": 1668612514
-        },
-        "@Haiwa: Logitech G Pro X Superlight": {
-            "product": "Logitech G Pro X Superlight",
-            "author": "@Haiwa",
-            "upvotes": 18,
-            "price": "799  kr",
-            "link": "https://www.elgiganten.se/product/datorer-kontor/datortillbehor/mus-tangentbord/datormus/logitech-g-pro-x-superlight-tradlos-gamingmus-svart/227965",
-            "detected": 1668612514
-        },
-        "@Mumu55: Sony 75\" X95J LCD FALD VA 4K120 DV eARC HDMI 2.1 GoogleTV": {
-            "product": "Sony 75\" X95J LCD FALD VA 4K120 DV eARC HDMI 2.1 GoogleTV",
-            "author": "@Mumu55",
-            "upvotes": 12,
-            "price": "14 990  kr",
-            "link": "https://www.mediamarkt.se/sv/product/_sony-x95j-75-led-4k-uhd-smart-google-tv-xr75x95jaep-1331342.html",
-            "detected": 1668612514
-        },
-        "@azizbek: AMD Ryzen 9 7900x": {
-            "product": "AMD Ryzen 9 7900x",
-            "author": "@azizbek",
-            "upvotes": 2,
-            "price": "6 692  kr",
-            "link": "https://www.amazon.se/dp/B0BBJ59WJ4/ref=asc_df_B0BBJ59WJ41668363900000/?tag=prisjakt05-21&creative=380333&creativeASIN=B0BBJ59WJ4&linkCode=asn&smid=ANU9KP01APNAG",
-            "detected": 1668612514
-        },
-        "@Merge_Tips: Xiaomi 11t pro": {
-            "product": "Xiaomi 11t pro",
-            "author": "@Merge_Tips",
-            "upvotes": 16,
-            "price": "3 490  kr",
-            "link": "https://www.netonnet.se/art/mobil-smartwatch/mobiltelefoner/xiaomi/xiaomi-11t-pro-8256gb-meteorite-gray/1021347.14647/?utm_source=prisjakt.nu&utm_medium=cpc&utm_campaign=prospecting_conversion_prisjakt-prisjamforelse_se",
-            "detected": 1668612514
-        },
-        "@Bakwetu: Xtrfy MZ1 gamingmus": {
-            "product": "Xtrfy MZ1 gamingmus",
-            "author": "@Bakwetu",
+        "@aabbcc: Inet HDMI-kabel 2.1 Vit 3 m": {
+            "product": "Inet HDMI-kabel 2.1 Vit 3 m",
+            "author": "@aabbcc",
             "upvotes": 0,
-            "price": "299  kr",
-            "link": "https://www.elgiganten.se/product/datorer-kontor/datortillbehor/mus-tangentbord/datormus/xtrfy-mz1-gamingmus/299810",
-            "detected": 1668614228
+            "price": "79  kr",
+            "link": "https://www.inet.se/produkt/8906848/inet-hdmi-kabel-2-1-vit-3-m",
+            "post_link": "https://www.sweclockers.com/forum/post/19832542",
+            "detected": 1669736255
+        },
+        "@kf: Ducky DKON2061ST One 2 Mini Pure White RGB Cherry MX Red (Nordisk)": {
+            "product": "Ducky DKON2061ST One 2 Mini Pure White RGB Cherry MX Red (Nordisk)",
+            "author": "@kf",
+            "upvotes": 0,
+            "price": "499  kr",
+            "link": "https://www.inet.se/produkt/6100994/ducky-one-2-mini-pure-white-2020-mx-red-rgb",
+            "post_link": "https://www.sweclockers.com/forum/post/19833068",
+            "detected": 1669760285
+        },
+        "@Gender Bender: ASRock Arc A770 Phantom Gaming 8GB": {
+            "product": "ASRock Arc A770 Phantom Gaming 8GB",
+            "author": "@Gender Bender",
+            "upvotes": 0,
+            "price": "4 999  kr",
+            "link": "https://www.inet.se/produkt/5413038/asrock-arc-a770-phantom-gaming-8gb",
+            "post_link": "https://www.sweclockers.com/forum/post/19834243",
+            "detected": 1669832859
+        },
+        "@BetaBoll: AMD Ryzen 5 5600X": {
+            "product": "AMD Ryzen 5 5600X",
+            "author": "@BetaBoll",
+            "upvotes": 7,
+            "price": "1 062  kr",
+            "link": "https://www.dustinhome.se/product/5011201937/ryzen-5-5600x",
+            "post_link": "https://www.sweclockers.com/forum/post/19834316",
+            "detected": 1669837179
+        },
+        "@emopingvin: Crucial BX500 1TB": {
+            "product": "Crucial BX500 1TB",
+            "author": "@emopingvin",
+            "upvotes": 0,
+            "price": "666  kr",
+            "link": "https://www.amazon.se/dp/B07YD579WM",
+            "post_link": "https://www.sweclockers.com/forum/post/19834370",
+            "detected": 1669839699
+        },
+        "@DavidtheDoom: Crucial P2 NVME 1TB": {
+            "product": "Crucial P2 NVME 1TB",
+            "author": "@DavidtheDoom",
+            "upvotes": 2,
+            "price": "587  kr",
+            "link": "https://www.amazon.se/dp/B089DNM8LR",
+            "post_link": "https://www.sweclockers.com/forum/post/19834386",
+            "detected": 1669840689
+        },
+        "@Donnerstal: Crucial P3 NVME 1TB": {
+            "product": "Crucial P3 NVME 1TB",
+            "author": "@Donnerstal",
+            "upvotes": 1,
+            "price": "638  kr",
+            "link": "https://www.amazon.se/-/en/dp/B0B25LZGGW?ref_=Oct_DLandingS_D_d51b10f4_60&smid=ANU9KP01APNAG&th=1",
+            "post_link": "https://www.sweclockers.com/forum/post/19834405",
+            "detected": 1669841319
+        },
+        "@Donnerstal: Crucial P3 NVME 2TB": {
+            "product": "Crucial P3 NVME 2TB",
+            "author": "@Donnerstal",
+            "upvotes": 1,
+            "price": "1 201  kr",
+            "link": "https://www.amazon.se/-/en/dp/B0B25MJ1YT",
+            "post_link": "https://www.sweclockers.com/forum/post/19834408",
+            "detected": 1669841679
+        },
+        "@Dmge: Kingston Fury Renegade M.2 1 & 2TB  SSD": {
+            "product": "Kingston Fury Renegade M.2 1 & 2TB  SSD",
+            "author": "@Dmge",
+            "upvotes": 2,
+            "price": "-",
+            "link": "https://www.webhallen.com/se/product/343248-Kingston-Fury-Renegade-M-2-2TB-SSD",
+            "post_link": "https://www.sweclockers.com/forum/post/19835376",
+            "detected": 1669908317
+        },
+        "@FredrikForsberg: AMD Ryzen 7 5700G 3.8 GHz": {
+            "product": "AMD Ryzen 7 5700G 3.8 GHz",
+            "author": "@FredrikForsberg",
+            "upvotes": 7,
+            "price": "1 999  kr",
+            "link": "https://www.inet.se/produkt/5306098/amd-ryzen-7-5700g-3-8-ghz-20mb-julkalender-30st",
+            "post_link": "https://www.sweclockers.com/forum/post/19834841",
+            "detected": 1669908317
+        },
+        "@Blade@LCD: Crucial P5 Plus NVME 2TB PCIe 4.0 NVMe - up to 6600MB/s sequential reading": {
+            "product": "Crucial P5 Plus NVME 2TB PCIe 4.0 NVMe - up to 6600MB/s sequential reading",
+            "author": "@Blade@LCD",
+            "upvotes": 3,
+            "price": "1 699  kr",
+            "link": "https://www.amazon.se/gp/product/B098WKQRDL",
+            "post_link": "https://www.sweclockers.com/forum/post/19834836",
+            "detected": 1669908317
+        },
+        "@FredrikForsberg: PowerColor Radeon RX 6600 8GB FIGHTER": {
+            "product": "PowerColor Radeon RX 6600 8GB FIGHTER",
+            "author": "@FredrikForsberg",
+            "upvotes": 10,
+            "price": "2 799  kr",
+            "link": "https://www.inet.se/produkt/5412572/powercolor-radeon-rx-6600-8gb-fighter-julkalender-90st",
+            "post_link": "https://www.sweclockers.com/forum/post/19834834",
+            "detected": 1669908317
+        },
+        "@Mattedatten: WD Black SSD SN770 NVMe 1TB M.2": {
+            "product": "WD Black SSD SN770 NVMe 1TB M.2",
+            "author": "@Mattedatten",
+            "upvotes": 4,
+            "price": "1 090  kr",
+            "link": "https://www.webhallen.com/se/product/346204-WD-Black-SSD-SN770-NVMe-1TB-M-2?pass=sweckalender",
+            "post_link": "https://www.sweclockers.com/forum/post/19834802",
+            "detected": 1669908317
+        },
+        "@FredrikForsberg: God Of War: Ragnarok - PS5": {
+            "product": "God Of War: Ragnarok - PS5",
+            "author": "@FredrikForsberg",
+            "upvotes": 3,
+            "price": "499  kr",
+            "link": "https://www.inet.se/produkt/6611074/god-of-war-ragnarok-ps5-julkalender-30st",
+            "post_link": "https://www.sweclockers.com/forum/post/19836204",
+            "detected": 1669972217
+        },
+        "@Caesar: Corsair MP600 PRO NH 8TB PCIe Gen4 x4 NVMe M.2 SSD": {
+            "product": "Corsair MP600 PRO NH 8TB PCIe Gen4 x4 NVMe M.2 SSD",
+            "author": "@Caesar",
+            "upvotes": 1,
+            "price": "-",
+            "link": "https://www.amazon.de/dp/B0BJL1FRRC",
+            "post_link": "https://www.sweclockers.com/forum/post/19836338",
+            "detected": 1669977707
+        },
+        "@heatm: LG OLED55C1": {
+            "product": "LG OLED55C1",
+            "author": "@heatm",
+            "upvotes": 1,
+            "price": "10 990  kr",
+            "link": "https://www.netonnet.se/art/tv/justnu/algo-test/lg-oled55c15/1017301.18564/",
+            "post_link": "https://www.sweclockers.com/forum/post/19836446",
+            "detected": 1669981757
+        },
+        "@Purgatory: Sennheiser Momentum 4 Wireless Over-ear": {
+            "product": "Sennheiser Momentum 4 Wireless Over-ear",
+            "author": "@Purgatory",
+            "upvotes": 2,
+            "price": "-",
+            "link": "https://www.komplett.se/product/1218249/demovaror/tv-ljud-bild/demo-ovrigt/sennheiser-momentum-4-aebt-traadlosa-horlurar-on-ear-sort-demo",
+            "post_link": "https://www.sweclockers.com/forum/post/19836444",
+            "detected": 1669981757
+        },
+        "@Felixark: RX 6700 XT STD Edition 12GB (Fyndvara)": {
+            "product": "RX 6700 XT STD Edition 12GB (Fyndvara)",
+            "author": "@Felixark",
+            "upvotes": 0,
+            "price": "4 790  kr",
+            "link": "https://www.netonnet.se/art/outlet/fyndvaror-datorkomponenter/asus-x-dual-radeon-rx-6700-xt-std-edition-12gb-gddr6/x1026554.3038/",
+            "post_link": "https://www.sweclockers.com/forum/post/19836693",
+            "detected": 1669991657
+        },
+        "@Felixark: Ryzen 5 5600 (Fyndvara)": {
+            "product": "Ryzen 5 5600 (Fyndvara)",
+            "author": "@Felixark",
+            "upvotes": 0,
+            "price": "1 490  kr",
+            "link": "https://www.netonnet.se/art/outlet/fyndvaror-datorkomponenter/amd-x-ryzen-5-5600-with-wraith-stealth-cooler/x1024509.3038/",
+            "post_link": "https://www.sweclockers.com/forum/post/19836700",
+            "detected": 1669991927
+        },
+        "@THB: Galaxy S22 Ultra 1TB (Online Exclusive)": {
+            "product": "Galaxy S22 Ultra 1TB (Online Exclusive)",
+            "author": "@THB",
+            "upvotes": 0,
+            "price": "11 040  kr",
+            "link": "https://www.samsung.com/se/multistore/benifyse/feature.SM-S908BZAPEUB/",
+            "post_link": "https://www.sweclockers.com/forum/post/19837173",
+            "detected": 1670013797
+        },
+        "@Pantburk: Sound Blaster AE-9": {
+            "product": "Sound Blaster AE-9",
+            "author": "@Pantburk",
+            "upvotes": 0,
+            "price": "255 EUR",
+            "link": "https://se.creative.com/p/sound-blaster/sound-blaster-ae-9",
+            "post_link": "https://www.sweclockers.com/forum/post/19837276",
+            "detected": 1670021717
+        },
+        "@muaysub: IKKO ITX01 (Docking station med inbyggd DAC)": {
+            "product": "IKKO ITX01 (Docking station med inbyggd DAC)",
+            "author": "@muaysub",
+            "upvotes": 2,
+            "price": "439  kr",
+            "link": "https://www.amazon.se/gp/product/B09MLXVLYD",
+            "post_link": "https://www.sweclockers.com/forum/post/19837533",
+            "detected": 1670068160
+        },
+        "@FredrikForsberg: Kingston NV2 M.2 NVMe Gen 4 2TB": {
+            "product": "Kingston NV2 M.2 NVMe Gen 4 2TB",
+            "author": "@FredrikForsberg",
+            "upvotes": 36,
+            "price": "1 099  kr",
+            "link": "https://www.inet.se/produkt/4305522/kingston-nv2-m-2-nvme-gen-4-2tb-julkalender-50st",
+            "post_link": "https://www.sweclockers.com/forum/post/19838568",
+            "detected": 1670154838
+        },
+        "@Haiwa: Steelseries Artics 7+": {
+            "product": "Steelseries Artics 7+",
+            "author": "@Haiwa",
+            "upvotes": 1,
+            "price": "1 319  kr",
+            "link": "https://sv.steelseries.com/gaming-headsets/arctis-7-plus?color=black",
+            "post_link": "https://www.sweclockers.com/forum/post/19839306",
+            "detected": 1670181388
+        },
+        "@JLockhart: Seasonic Prime GX 850W": {
+            "product": "Seasonic Prime GX 850W",
+            "author": "@JLockhart",
+            "upvotes": 1,
+            "price": "1 390  kr",
+            "link": "https://www.inet.se/produkt/6903861/seasonic-prime-gx-850w",
+            "post_link": "https://www.sweclockers.com/forum/post/19839753",
+            "detected": 1670231318
+        },
+        "@Haiwa: Ducky One 2 Mini - MX Red": {
+            "product": "Ducky One 2 Mini - MX Red",
+            "author": "@Haiwa",
+            "upvotes": 11,
+            "price": "499  kr",
+            "link": "https://www.inet.se/produkt/6100994/ducky-one-2-mini-pure-white-2020-mx-red-rgb",
+            "post_link": "https://www.sweclockers.com/forum/post/19839427",
+            "detected": 1670231318
+        },
+        "@JLockhart: Logitech G PRO X Headset 7.1": {
+            "product": "Logitech G PRO X Headset 7.1",
+            "author": "@JLockhart",
+            "upvotes": 1,
+            "price": "599  kr",
+            "link": "https://www.inet.se/produkt/6610641/logitech-g-pro-x-headset-7-1-julkalender-30st",
+            "post_link": "https://www.sweclockers.com/forum/post/19839760",
+            "detected": 1670231772
+        },
+        "@CreamyBanana: LG NANO96 65\" NanoCell 8K UHD (65NANO966PA)": {
+            "product": "LG NANO96 65\" NanoCell 8K UHD (65NANO966PA)",
+            "author": "@CreamyBanana",
+            "upvotes": 3,
+            "price": "9 990  kr",
+            "link": "https://www.mediamarkt.se/sv/product/_lg-nano96-65-nanocell-8k-uhd-smart-tv-65nano966pa-1333189.html",
+            "post_link": "https://www.sweclockers.com/forum/post/19840383",
+            "detected": 1670277424
+        },
+        "@Chrillthebill: 5600X": {
+            "product": "5600X",
+            "author": "@Chrillthebill",
+            "upvotes": 21,
+            "price": "1 890  kr",
+            "link": "https://www.amazon.se/AMD-Ryzen-5600X-l%C3%A5da-Processor/dp/B08166SLDF/ref=asc_df_B08166SLDF/?tag=shpngadsglede-21&linkCode=df0&hvadid=476460280708&hvpos=&hvnetw=g&hvrand=10887743090582783655&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=10",
+            "post_link": "https://www.sweclockers.com/forum/post/19840159",
+            "detected": 1670277424
+        },
+        "@JLockhart: Logitech G PRO X Headset 7.1 (SLUTS\u00c5LD)": {
+            "product": "Logitech G PRO X Headset 7.1 (SLUTS\u00c5LD)",
+            "author": "@JLockhart",
+            "upvotes": 8,
+            "price": "599  kr",
+            "link": "https://www.inet.se/produkt/6610641/logitech-g-pro-x-headset-7-1-julkalender-30st",
+            "post_link": "https://www.sweclockers.com/forum/post/19839760",
+            "detected": 1670277424
+        },
+        "@Pirum: Verbatim 10-pack 25GB BD-R inkjet printable": {
+            "product": "Verbatim 10-pack 25GB BD-R inkjet printable",
+            "author": "@Pirum",
+            "upvotes": 0,
+            "price": "61  kr",
+            "link": "https://www.amazon.se/dp/B00DHS9F76",
+            "post_link": "https://www.sweclockers.com/forum/post/19840821",
+            "detected": 1670280668
         }
     },
-    "last_update": 1668614248
+    "last_update": 1670280827
 }
