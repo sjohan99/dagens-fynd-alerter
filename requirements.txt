@@ -1,2 +1,2 @@
 beautifulsoup4
-discord.py==3.1.7
+discord.py==1.7.3
