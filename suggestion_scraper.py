@@ -7,7 +7,7 @@ SUGGESTION_PATH = 'suggestions/suggestion.json'
 
 SWEC_DAGENSFYND_URL = 'https://www.sweclockers.com/dagensfynd'
 SAVE_HTML_PATH = 'suggestions/html'
-SECONDS_IN_DAY = 604800
+SECONDS_IN_DAY = 86_400
 SEVEN_DAYS_IN_SECONDS = 7 * SECONDS_IN_DAY
 SUGGESTIONS = 'suggestions'
 LAST_UPDATE = 'last_update'
