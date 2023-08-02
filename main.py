@@ -1,12 +1,11 @@
-import sys
-from enum import Enum
-
+import os
 import discord
 from discord.ext import tasks
 import suggestion_scraper
 from bot_settings import DagensFyndConfig
 from read_config import ReadConfig
 from utils import CommandVerifier, get_command
+from dotenv import load_dotenv
 
 PREFIX = "df "
 SET_CHANNEL = 'set-channel'
@@ -146,15 +145,8 @@ class DagensFynd(discord.Client):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1]:
-        token = sys.argv[1]
-    else:
-        try:
-            with open('tokensecret.txt', 'r', encoding='utf-8') as f:
-                token = f.read().strip()
-        except FileNotFoundError as e:
-            print(e)
-            exit()
+    load_dotenv()
+    token = os.environ['BOTTOKEN']
 
 client = DagensFynd(intents=discord.Intents.default())
 client.run(token)
