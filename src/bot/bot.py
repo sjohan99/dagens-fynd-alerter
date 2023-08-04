@@ -84,7 +84,7 @@ class DealAlerterBot(discord.Client):
 
         command = get_command(message.content, PREFIX)
 
-        if command not in ACTIVE_COMMANDS:
+        if command and command not in ACTIVE_COMMANDS:
             await message.channel.send(f'Command `{command}` not found, use `df help` for available commands')
             return
 
