@@ -2,7 +2,6 @@ import json
 from dotenv import load_dotenv
 import os
 
-CONFIG_PATH = 'config.json'
 GUILDS = 'posting_guilds'
 SUBSCRIBERS = 'subscribers'
 KEYWORD_SUBS = 'keyword_subscribers'
@@ -11,17 +10,18 @@ KEYWORD_SUBS = 'keyword_subscribers'
 class SubscriberConfig:
 
     def __init__(self):
-        self.config = get_config(CONFIG_PATH)
+        self._config_path = self._get_config_path()
+        self.config = self._read_config()
         self.init_json()
 
     def _save(self):
-        with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
+        with open(self._config_path, 'w', encoding='utf-8') as f:
             f.write(json.dumps(self.config, indent=4))
 
-    def _config_path(self):
+    def _get_config_path(self):
         load_dotenv()
         db_path = os.environ['DFA_DB_PATH']
-        os.path.join(db_path, 'config.json')
+        return os.path.join(db_path, 'config.json')
 
     def init_json(self):
         if GUILDS not in self.config:
@@ -85,12 +85,13 @@ class SubscriberConfig:
 
         self._save()
 
+    def _read_config(self):
+        try:
+            with open(self._config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (FileNotFoundError, json.decoder.JSONDecodeError):
+            return {}
+
     def __getitem__(self, key):
         return self.config[key]
-
-def get_config(path):
-    try:
-        with open(path, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except (FileNotFoundError, json.decoder.JSONDecodeError):
-        return {}
+    
