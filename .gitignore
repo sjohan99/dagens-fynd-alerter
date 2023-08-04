@@ -131,4 +131,7 @@ dmypy.json
 tokensecret.txt
 suggestions/
 config.json
-Dockerfile
+
+.vscode
+
+db/
