@@ -54,17 +54,25 @@ class DealAlerterBot(discord.Client):
 
     @tasks.loop(seconds=LOOP_INTERVAL_SECONDS)
     async def scraper_loop(self):
-        self.netonnet.fetch_new_deals()
-        self.sweclockers.fetch_new_deals()
-        self.logger.info(f'Found {len(self.netonnet.new_deals)} new deals on NetOnNet')
-        self.logger.info(f'Found {len(self.sweclockers.new_deals)} new deals on SweClockers')
-        if not any([self.netonnet.new_deals, self.sweclockers.new_deals]):
-            return
+        try:
+            self.netonnet.fetch_new_deals()
+            self.sweclockers.fetch_new_deals()
+            self.logger.info(f'Found {len(self.netonnet.new_deals)} new deals on NetOnNet')
+            self.logger.info(f'Found {len(self.sweclockers.new_deals)} new deals on SweClockers')
+            if not any([self.netonnet.new_deals, self.sweclockers.new_deals]):
+                return
 
-        for guild_id, channel_id in self.config.get_posting_guilds_channels():
-            message = self._build_message(guild_id)
-            channel = self.get_channel(channel_id)
-            await channel.send(message)
+            for guild_id, channel_id in self.config.get_posting_guilds_channels():
+                message = self._build_message(guild_id)
+                channel = self.get_channel(channel_id)
+                await channel.send(message)
+        except discord.errors.DiscordException as e:
+            self.logger.error(f'Error in scraper loop: {e}')
+        except Exception as e:
+            self.logger.critical(f'Unknown error in scraper loop: {e}')
+            self.logger.warning(f'Shutting down bot')
+            await self.close()
+            exit()
 
     @scraper_loop.before_loop
     async def initialize_scaper_loop(self):
