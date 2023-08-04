@@ -1,4 +1,6 @@
 import json
+from dotenv import load_dotenv
+import os
 
 CONFIG_PATH = 'config.json'
 GUILDS = 'posting_guilds'
@@ -6,7 +8,7 @@ SUBSCRIBERS = 'subscribers'
 KEYWORD_SUBS = 'keyword_subscribers'
 
 
-class DagensFyndConfig:
+class SubscriberConfig:
 
     def __init__(self):
         self.config = get_config(CONFIG_PATH)
@@ -15,6 +17,11 @@ class DagensFyndConfig:
     def _save(self):
         with open(CONFIG_PATH, 'w', encoding='utf-8') as f:
             f.write(json.dumps(self.config, indent=4))
+
+    def _config_path(self):
+        load_dotenv()
+        db_path = os.environ['DFA_DB_PATH']
+        os.path.join(db_path, 'config.json')
 
     def init_json(self):
         if GUILDS not in self.config:
