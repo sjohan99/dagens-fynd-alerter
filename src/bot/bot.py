@@ -120,6 +120,7 @@ class DealAlerterBot(discord.Client):
             verifier.verify_keyword(message.content)
             self.logger.info(f'Unsubscribed {message.author.name} from keyword: {verifier.verified_result}')
             self.config.unsubscribe_from_keyword(message.author.id, message.guild.id, verifier.verified_result)
+            await message.channel.send(f'Unsubbed {message.author.name} from keyword `{verifier.verified_result}`')
 
         if command == SHOW_KWS:
             to_send = f'Keywords for {message.author.name}\n`{self.read_config.get_keywords_for_user(message.author.id, message.guild.id)}`'
