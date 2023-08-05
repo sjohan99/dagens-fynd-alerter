@@ -19,7 +19,7 @@ UNSUB_KW = 'unsub-kw'
 SHOW_KWS = 'my-kws'
 HELP = 'help'
 
-LOOP_INTERVAL_SECONDS = 90
+LOOP_INTERVAL_SECONDS = 180
 
 ACTIVE_COMMANDS = {
     SET_CHANNEL,
@@ -54,25 +54,17 @@ class DealAlerterBot(discord.Client):
 
     @tasks.loop(seconds=LOOP_INTERVAL_SECONDS)
     async def scraper_loop(self):
-        try:
-            self.netonnet.fetch_new_deals()
-            self.sweclockers.fetch_new_deals()
-            self.logger.info(f'Found {len(self.netonnet.new_deals)} new deals on NetOnNet')
-            self.logger.info(f'Found {len(self.sweclockers.new_deals)} new deals on SweClockers')
-            if not any([self.netonnet.new_deals, self.sweclockers.new_deals]):
-                return
+        self.netonnet.fetch_new_deals()
+        self.sweclockers.fetch_new_deals()
+        self.logger.info(f'Found {len(self.netonnet.new_deals)} new deals on NetOnNet')
+        self.logger.info(f'Found {len(self.sweclockers.new_deals)} new deals on SweClockers')
+        if not any([self.netonnet.new_deals, self.sweclockers.new_deals]):
+            return
 
-            for guild_id, channel_id in self.config.get_posting_guilds_channels():
-                message = self._build_message(guild_id)
-                channel = self.get_channel(channel_id)
-                await channel.send(message)
-        except discord.errors.DiscordException as e:
-            self.logger.error(f'Error in scraper loop: {e}')
-        except Exception as e:
-            self.logger.critical(f'Unknown error in scraper loop: {e}')
-            self.logger.warning(f'Shutting down bot')
-            await self.close()
-            exit()
+        for guild_id, channel_id in self.config.get_posting_guilds_channels():
+            message = self._build_message(guild_id)
+            channel = self.get_channel(channel_id)
+            await channel.send(message)
 
     @scraper_loop.before_loop
     async def initialize_scaper_loop(self):
@@ -148,6 +140,8 @@ class DealAlerterBot(discord.Client):
     def _build_message(self, guild_id):
         netonnet_deals = self.netonnet.get_deals_to_post_in_guild(guild_id)
         sweclockers_deals = self.sweclockers.get_deals_to_post_in_guild(guild_id)
+        self.logger.info(f'Found {len(netonnet_deals)} deals to post from NetOnNet')
+        self.logger.info(f'Found {len(sweclockers_deals)} deals to post from SweClockers')
         message_builder = MessageBuilder()
         users_to_tag = set()
         if netonnet_deals:

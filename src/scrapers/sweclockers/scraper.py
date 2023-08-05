@@ -10,8 +10,9 @@ def connect():
     soup = get_soup_parser_for_html(html)
     return create_products_dict(soup)
 
+
 def download_html(url):
-    response = request.urlopen(url)
+    response = request.urlopen(url, timeout=30)
     web_content = response.read().decode('UTF-8')
     return web_content
 
