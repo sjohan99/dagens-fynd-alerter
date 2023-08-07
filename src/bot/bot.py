@@ -7,7 +7,7 @@ from scrapers.netonnet.netonnet import NetOnNet
 from scrapers.sweclockers.sweclockers import SweClockers
 from subscriber_config import SubscriberConfig
 from read_config import ReadConfig
-from utils import CommandVerifier, get_command
+from utils import CommandVerifier, get_command, truncate
 
 PREFIX = "df "
 SET_CHANNEL = 'set-channel'
@@ -54,17 +54,22 @@ class DealAlerterBot(discord.Client):
 
     @tasks.loop(seconds=LOOP_INTERVAL_SECONDS)
     async def scraper_loop(self):
+        self.logger.info('Scraping for new deals')
         self.netonnet.fetch_new_deals()
         self.sweclockers.fetch_new_deals()
-        self.logger.info(f'Found {len(self.netonnet.new_deals)} new deals on NetOnNet')
-        self.logger.info(f'Found {len(self.sweclockers.new_deals)} new deals on SweClockers')
         if not any([self.netonnet.new_deals, self.sweclockers.new_deals]):
+            self.logger.info('No new deals found, skipping posting')
             return
 
         for guild_id, channel_id in self.config.get_posting_guilds_channels():
             message = self._build_message(guild_id)
-            channel = self.get_channel(channel_id)
-            await channel.send(message)
+            if not message:
+                continue
+            try:
+                channel = self.get_channel(channel_id)
+                await channel.send(message)
+            except discord.errors.DiscordException:
+                self.logger.error(f'Failed to post message {truncate(message)} to channel {channel_id} in guild {guild_id}')
 
     @scraper_loop.before_loop
     async def initialize_scaper_loop(self):

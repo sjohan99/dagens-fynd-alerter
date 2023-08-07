@@ -7,6 +7,9 @@ def get_command(message_content: str, prefix):
         return None
     return contents[1]
 
+def truncate(message: str, max_len: int = 75):
+    return message[:max_len] + ' ...' if len(message) > max_len else message
+
 class CommandVerifier:
 
     def __init__(self, prefix: str, command: str):
